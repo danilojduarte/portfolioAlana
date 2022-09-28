@@ -37,6 +37,7 @@ header {
 .navbar {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar a {
@@ -84,7 +85,7 @@ section {
 
 .home-text p {
     font-size: 16px;
-    color: black;
+    color: #646E80;
     line-height: 27px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -100,11 +101,11 @@ section {
     border: none;
     font-size: 17px;
     font-weight: 700;
-    transition: all .25s ease;
+    transition: all .5s ease;
 }
 
 .btn:hover {
-    box-shadow: 0px 15px 22px rgba(236, 55, 209, 0.705);
+    background-color: rgba(162, 162, 244, 0.811);
 }
 
 .home-img {
@@ -121,7 +122,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    grid-gap: 3rem;
+    grid-gap: -4rem;
 
 }
 .about-sessao1 h3 {
@@ -134,7 +135,80 @@ section {
 
 .about-sessao1 h2 {
     margin: 20px 0px 20px;
-    font-size: 42px;
-    line-height: 1.1;
+    font-size: 35px;
+    letter-spacing: -0.05em;
     line-height: 45px;
 }
+
+.about-sessao2 p {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    line-height: 24px;
+    color: #646E80;
+}
+
+.btn2 {
+    display: inline-block;
+    background:#FF0067;
+    color: #fff;
+    padding: 17px 32px;
+    margin-right: 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+
+.btn2:hover {
+    background-color: rgba(162, 162, 244, 0.811);
+}
+
+/* Controle do scroll através do JavaScript */
+header.sticky {
+    background: #fff;
+    padding: 12px 18%;
+    box-shadow: 0px 0px 1px #13084982;
+}
+
+.skill-text h3 {
+    color: #FF0067;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.skill-text h2 {
+    margin: 20px 0px 20px;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: -0.05em;
+    line-height: 45px;
+}
+
+.box-geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.box {
+    display: flex;
+    text-align: center;
+    line-height: 20px;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+    cursor: pointer; */
