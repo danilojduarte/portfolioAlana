@@ -81,6 +81,7 @@ section {
     color: #FF0067;
     font-size: 20px;
     font-weight: 600;
+    letter-spacing: 0.25em;
 }
 
 .home-text p {
@@ -130,6 +131,7 @@ section {
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 0.25em;
 
 }
 
@@ -138,6 +140,7 @@ section {
     font-size: 35px;
     letter-spacing: -0.05em;
     line-height: 45px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-sessao2 p {
@@ -178,6 +181,7 @@ header.sticky {
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 0.25em;
 }
 
 .skill-text h2 {
@@ -186,6 +190,7 @@ header.sticky {
     font-size: 35px;
     letter-spacing: -0.05em;
     line-height: 45px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .box-geral {
@@ -227,6 +232,7 @@ header.sticky {
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 0.25em;
 }
 
 .portfolio-text h2 {
@@ -295,6 +301,7 @@ header.sticky {
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 0.25em;
 }
 
 .port-texto h2 {
@@ -366,6 +373,7 @@ header.sticky {
     color: #FF0067;
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: 0.25em;
 }
 
 .qualification-text h4 {
@@ -387,6 +395,7 @@ header.sticky {
 .qualification-icons {
     padding: 160px 22%;
     border-top: solid 1px black;
+    border-bottom: solid 1px black;
 }
 
 .box-icons {
@@ -411,4 +420,33 @@ header.sticky {
     color: #646E80;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+.testimonial {
+    padding: 160px 22%;
+}
+
+.testimonial-text h3 {
+    color: #FF0067;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    margin-bottom: 40px;
+}
+
+.testimonial-text h4 {
+    line-height: 30px;
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+    font-family: 'Poppins', sans-serif;
+}
+    
+.testimonial-box-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;   
 }
