@@ -501,3 +501,9 @@ h2 {
     color: #646E89;
     font-weight: 600;
 }
+
+.img-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
