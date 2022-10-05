@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon-ar_Prancheta 1.webp" type="image/x-icon">
 
     <title>Alana Rodrigues | Graphic & Illustrator from Brazil</title>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +29,11 @@
         <a href="#" class="logo"><img src="img/favicon-ar_Prancheta 1.webp"></a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
-            <li><a href="#about" class="active">About</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#home" class="active">About</a></li>
+            <li><a href="#skill">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#qualification">Qualification</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
@@ -38,8 +42,7 @@
     <section class="home" id="home">
         <div class="home-text">
             <h3>A GREAT DESIGN CHANGES EVERYTHING</h3>
-            <h1>I’m Alana Rodrigues<br> Freelancer Graphic<br>
-                & Web Designer</h1>
+            <h1>I’m <span class="input"></span></h1>
             <p>I am currently working as the Art Director for WellPut Custom Content and Design, Lead Designer for
                 Million Waves Project and America’s Voices in Israel. If you need help with your projects or want to
                 collaborate, shoot me a message and we can chat about it :)</p>
@@ -101,6 +104,7 @@
                         <p>Website Design</p>
                         <p>Mobile App Design</p>
                         <p>Graphic Illustrations</p>
+                        <p>Author Websites</p>
                     </div>
                 </div>
             </div>
@@ -212,7 +216,7 @@
     <!-- Qualification -->
 
     <section class="qualification" id="qualification">
-        <div class="qualification-text">
+        <div class="qualification-text-titulo">
             <h3>QUALIFICATION</h3>
             <h2>Work Experience</h2>
         </div>
@@ -256,19 +260,19 @@
                 <p>PROJECTS</p>
             </div>
             <div class="box-icon">
-                <img src="img/ICONS-2_Prancheta 1.webp" alt="">
-                <h2>367</h2>
-                <p>PROJECTS</p>
+                <img src="img/ICONS-2-02.webp" alt="">
+                <h2>13</h2>
+                <p>CONTESTS WON</p>
             </div>
             <div class="box-icon">
-                <img src="img/ICONS-2_Prancheta 1.webp" alt="">
-                <h2>367</h2>
-                <p>PROJECTS</p>
+                <img src="img/ICONS-2-03.webp" alt="">
+                <h2>158</h2>
+                <p>HAPPY CLIENTS</p>
             </div>
             <div class="box-icon">
-                <img src="img/ICONS-2_Prancheta 1.webp" alt="">
-                <h2>367</h2>
-                <p>PROJECTS</p>
+                <img src="img/ICONS-2-04.webp" alt="">
+                <h2>1.836</h2>
+                <p>CUPS OF COFFEE</p>
             </div>
         </div>
     </section>
@@ -398,6 +402,16 @@
 
     <!-- Link Arquivo Js -->
     <script type="text/javascript" src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Alana Rodrigues.", "Freelancer Graphic.", "Web Designer."],
+            typeSpeed: 50,
+            backSpeed: 60,
+            loop:true
+        } );
+    </script>
 </body>
 
 </html>

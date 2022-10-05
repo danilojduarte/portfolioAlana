@@ -57,8 +57,15 @@ header {
     color: #FF0067;
 }
 
+#menu-icon {
+    font-size: 40px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
 section {
-    padding: 160px 10%;
+    padding: 160px 16%;
 }
 
 .home {
@@ -75,6 +82,10 @@ section {
     margin: 20px 0px 20px;
     font-size: 42px;
     line-height: 1.1;
+}
+
+span {
+    color: #FF0067;
 }
 
 .home-text h3 {
@@ -117,6 +128,7 @@ section {
 .section-about {
     background-color: rgb(246, 245, 255);
     max-width: 100%;
+    padding: 160px 16%;
 }
 
 .about {
@@ -141,6 +153,7 @@ section {
     font-size: 35px;
     letter-spacing: -0.05em;
     line-height: 45px;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -199,6 +212,7 @@ header.sticky {
     align-items: center;
     justify-content: center;
     gap: 90px;
+    padding-top: 30px;
 }
 
 .box {
@@ -225,7 +239,7 @@ h2 {
 }
 
 .portfolio {
-    padding: 140px 12%;
+    padding: 140px 16%;
 }
 
 .portfolio-text h3 {
@@ -365,6 +379,31 @@ h2 {
 
 .qualification-text {
     line-height: 30px;
+    position: relative;
+}
+
+.qualification-text-titulo h3 {
+    color: #FF0067;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+}
+
+.qualification-text-titulo h2 {
+    margin: 20px 0px 20px;
+    font-size: 35px;
+    letter-spacing: -0.05em;
+    line-height: 45px;
+}
+
+.qualification-text::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #f3659ea9;
+    position: absolute;
+    left: -40px;
+    top: 8px;
 }
 
 .qualification-text h2 {
@@ -398,9 +437,7 @@ h2 {
 }
 
 .qualification-icons {
-    padding: 160px 22%;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
+    padding: 110px 22%;
 }
 
 .box-icons {
@@ -408,11 +445,14 @@ h2 {
     flex-direction: row;
     text-align: center;
     justify-content: space-evenly;
+    border-top: 1px solid #dad5d2;
+    border-bottom: 1px solid  #dad5d2;
+    padding: 40px 0px 40px 0px;
 }
 
 .box-icon img {
     width: 60%;
-    height: auto;
+    height: 9vh;
 }
 
 .box-icon h2 {
@@ -428,7 +468,7 @@ h2 {
 }
 
 .testimonial {
-    padding: 160px 18%;
+    padding: 130px 20%;
 }
 
 .testimonial-text h3 {
@@ -459,7 +499,7 @@ h2 {
 
 .testimonial-box-content img {
     width: 72em;
-    height: 46vh;
+    height: 42vh;
 }
 
 .contact {
@@ -619,4 +659,64 @@ h2 {
     color: #FF0067;
     font-size: 14px;
     padding-bottom: 10px;
+}
+
+/* Reposividade */
+
+@media (max-widdth: 1640px){
+    .home {
+        height: 80vh;
+        padding-top: 100px;
+    }
+    header {
+        padding: 14px 3%;
+        transition: .3s;
+    }
+    header.sticky{
+        padding: 10px 3%;
+        transition: .3s;
+    }
+    section {
+        padding: 70px 3%;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 1110px) {
+    #menu-icon {
+        display: block;
+    }
+    .top-btn {
+        display: none;
+    }
+    .navbar {
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #fff;
+        align-items: flex-start;
+        box-shadow: 0px 0px 1px #13084982;
+        transition: all .40s ease;
+    }   
+    .navbar a{
+        display: block;
+        padding: 0.8rem;
+        margin: 0.5rem;
+    }
+    .navbar.open{
+        top: 100%;
+    }
+}
+
+@media (max-width: 860px){
+    .home {
+        height: 75vh;
+        padding-top: 100px;
+    }
+    section {
+        padding: 80px 3%;
+    }
+
 }
