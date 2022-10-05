@@ -521,6 +521,24 @@ h2 {
     padding-top: 140px;
 }
 
+.btn-contact {
+    display: inline-block;
+    background: #FF0067;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.btn-contact:hover {
+    background-color: rgba(162, 162, 244, 0.811);
+    color: #FF0067;
+}
+
+
 .label-contact {
     margin-bottom: 10px;
     font-size: 12px;
