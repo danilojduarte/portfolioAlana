@@ -513,6 +513,10 @@ h2 {
     max-width: 100%;
 }
 
+.contact-link a {
+    color: black;
+}
+
 .contact-text h3 {
     color: #FF0067;
     font-size: 14px;
