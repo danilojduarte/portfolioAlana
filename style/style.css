@@ -81,7 +81,7 @@ section {
 
 .home-text h1 {
     margin: 20px 0px 20px;
-    font-size: 38px;
+    font-size: 34px;
     line-height: 1.1;
 }
 
@@ -338,10 +338,10 @@ h2 {
     display: inline-block;
     background: #FF0067;
     color: #fff;
-    padding: 14px 32px;
+    padding: 12px 30px;
     border-radius: 30px;
     border: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     transition: all .5s ease;
 }
@@ -355,10 +355,10 @@ h2 {
     display: inline-block;
     background: transparent;
     color: #fff;
-    padding: 14px 32px;
+    padding: 12px 30px;
     border-radius: 30px;
     border: 1px solid #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     transition: all .5s ease;
 }
@@ -624,8 +624,10 @@ h2 {
     color: #fff;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 60px;
+    text-align: center;
+    gap: 30px;
 
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -771,7 +773,7 @@ h2 {
     }
 
     .home-text p {
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
     }
 
@@ -956,11 +958,13 @@ h2 {
 
     .footer {
         display: grid;
-        grid-template-columns: repeat(1, 4fr);
-        grid-gap: 1rem;
-        align-items: center;
+        grid-template-columns: repeat(1, 2fr);
+        flex-direction: column;
+        justify-content: center;
+
         text-align: center;
         transition: all .40s ease;
+        position: absolute;
     }
 
     .footer-logo img {
@@ -974,7 +978,8 @@ h2 {
     }
 
     .footer-icons {
-        padding-left: 90px;
+       display: flex;
+       justify-content: center;
     }
 
     .footer-icons img {
