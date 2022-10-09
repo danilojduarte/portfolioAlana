@@ -58,7 +58,7 @@ header {
 }
 
 #menu-icon {
-    font-size: 40px;
+    font-size: 38px;
     z-index: 10001;
     cursor: pointer;
     display: none;
@@ -187,7 +187,7 @@ span {
 /* Controle do scroll através do JavaScript */
 header.sticky {
     background: #fff;
-    padding: 12px 18%;
+    padding: 12px 16%;
     box-shadow: 0px 0px 1px #13084982;
 }
 
@@ -195,7 +195,7 @@ header.sticky {
     color: #FF0067;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.25em;
 }
@@ -763,7 +763,7 @@ h2 {
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .home {
@@ -885,7 +885,7 @@ h2 {
 
     .box-icon h2,
     p {
-        font-size: 14px;
+        font-size: 11px;
         align-items: center;
     }
 
@@ -902,6 +902,9 @@ h2 {
 
     .testimonial {
         text-align: center;
+    }
+    .testimonial-text h4 {
+        line-height: 40px;
     }
 
     .testimonial-box-content {
@@ -948,6 +951,9 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .contact-midia h2 {
+        padding-bottom: 20px
     }
     .contact-form fieldset {
         display: flex;
