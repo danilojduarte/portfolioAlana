@@ -66,7 +66,7 @@ header {
 }
 
 section {
-    padding: 200px 16%;
+    padding: 120px 18%;
 }
 
 .home {
@@ -81,7 +81,7 @@ section {
 
 .home-text h1 {
     margin: 20px 0px 20px;
-    font-size: 42px;
+    font-size: 38px;
     line-height: 1.1;
 }
 
@@ -129,7 +129,7 @@ span {
 .section-about {
     background-color: rgb(246, 245, 255);
     max-width: 100%;
-    padding: 170px 20%;
+    padding: 210px 20%;
 }
 
 .about {
@@ -172,9 +172,10 @@ span {
     color: #fff;
     padding: 17px 32px;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 30px;
     border: none;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 700;
     transition: all .5s ease;
 }
@@ -272,13 +273,13 @@ h2 {
 }
 
 .portfolio-img img {
-    width: 20rem;
+    width: 16rem;
     height: auto;
 }
 
 .portfolio-box {
     align-items: center;
-    padding: 15px 50px 15px 50px;
+    padding: 15px 30px 15px 30px;
     background: #fff;
     box-shadow: 0px 5px 40px rgb(19 8 79 / 13%);
     border-radius: 20px;
@@ -508,7 +509,7 @@ h2 {
 }
 
 .contact {
-    padding: 50px 30%;
+    padding: 50px 28%;
     background-color: rgb(246, 245, 255);
     max-width: 100%;
 }
@@ -588,6 +589,11 @@ h2 {
 }
 
 
+.label-contact input {
+    width: 28em; 
+    height: 3em;
+}
+
 .label-contact {
     margin-bottom: 10px;
     font-size: 12px;
@@ -614,7 +620,7 @@ h2 {
 .footer {
     width: 100%;
     background: rgb(2, 2, 56);
-    height: 45vh;
+    height: auto;
     color: #fff;
 
     display: flex;
@@ -755,13 +761,15 @@ h2 {
     header {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
+
     .home {
         grid-template-columns: 1fr;
         height: 100vh;
         grid-gap: 1rem;
     }
+
     .home-text p {
         font-size: 12px;
         text-align: center;
@@ -782,7 +790,7 @@ h2 {
     }
 
     .about {
-        padding-top: 30px;
+        padding-top: 20px;
         grid-template-columns: 1fr;
         /* height: 100vh; */
         grid-gap: 1rem;
@@ -811,26 +819,30 @@ h2 {
         height: auto;
     }
 
+    .portfolio-img img {
+        border-radius: 20px;
+    }
+
     .portfolio-box {
+        display: flex;
+        justify-content: center;
         align-items: center;
         background: #fff;
+        transition: all .40s ease;
 
+        padding: none;
+        background: transparent;
+        box-shadow: none;
         border-radius: 20px;
         transition: all .40s ease;
     }
-    .portfolio-box {
-        align-items: center;
-        padding: none;
-        background: transparent;
-        box-shadow: 0px 5px 10px rgb(19 8 79 / 12%);
-        border-radius: 18px;
-        transition: all .40s ease;
-    }
+
     .skill h2 {
         font-size: 25px;
         transition: all .40s ease;
     }
-    .box{
+
+    .box {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -844,6 +856,7 @@ h2 {
         display: flex;
         flex-direction: column;
     }
+
     .qualification {
         text-align: center;
     }
@@ -862,13 +875,9 @@ h2 {
         align-items: center;
     }
 
-    .box-icon {
-        width: 100px;
-        height: 18vh;
-    }
-
     .box-icon img {
         width: 40px;
+        height: 5vh;
         margin-bottom: 10px;
     }
 
@@ -883,9 +892,12 @@ h2 {
     }
 
     .box-icons {
-        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
     }
-    
+
     .testimonial {
         text-align: center;
     }
@@ -900,7 +912,7 @@ h2 {
     .testimonial-box-content img {
         width: 18rem;
         height: auto;
-        gap:8px;
+        gap: 8px;
     }
 
     .contact i {
@@ -912,26 +924,36 @@ h2 {
         padding: 65px 3%;
         transition: .3s;
     }
-
+    .label-contact input {
+        width: 18em; 
+        height: 3em;
+    }
     /* Aplicando responsividade no formulario */
     .contact-text {
         margin-bottom: 20px;
     }
+
     .contact-conteudo {
         display: flex;
         flex-direction: column;
     }
+
     .contact-info {
         text-align: center;
     }
+
     .contact-midia {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .label-contact .contact-input {
-        width: 2px;
+    .contact-form fieldset {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
+
+
     .footer {
         display: grid;
         grid-template-columns: repeat(1, 4fr);
@@ -940,21 +962,25 @@ h2 {
         text-align: center;
         transition: all .40s ease;
     }
+
     .footer-logo img {
         width: 50px;
         height: auto;
     }
+
     .footer-icons a {
         align-items: center;
-        
+
     }
+
     .footer-icons {
-        padding-left: 130px;
+        padding-left: 90px;
     }
+
     .footer-icons img {
         width: 40px;
     }
-    
+
 
     .footer-title h2 {
         font-size: 18px;
@@ -965,8 +991,9 @@ h2 {
         color: white;
         font-weight: 200;
     }
+
     .footer-contact {
         display: none;
     }
-   
+
 }
